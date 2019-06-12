@@ -1,0 +1,19 @@
+
+Sub add()  ' declear function here "add" keyword is user define  '
+
+Dim a As Integer ' define variable which is data type is integer and variable name is a'
+Dim b As Integer 'define variable which is data type is integer and variable name is b'
+Dim c As Integer  'define variable which is data type is integer and variable name is c' 
+
+a = InputBox("Please enter the first number")'Get Input from User and stor on variable a'
+
+b = InputBox("Please enter the Second number") 'Get Input from User and stor on variable b'
+
+c = a + b  ' addition of value a and value b which is get by user.'
+
+'Comment : ignore by compiler '
+
+MsgBox (c) ' desplay the c value which is hold the a addition value of a and b.'
+
+
+End Sub   'end function
