@@ -1,0 +1,134 @@
+
+Sub mysum()
+
+ Dim a As Integer
+ Dim b As Integer
+ Dim c As Integer
+a = InputBox("please enter the first number")
+b = InputBox("please enter the second number")
+
+c = a + b
+MsgBox (c)
+
+
+
+
+
+End Sub
+
+
+Sub displayDetails()
+    
+    Dim roll As Integer
+    Dim name As String
+    Dim marks As Integer
+    Dim phone As Integer
+    
+    roll = InputBox("please enter roll number")
+    name = InputBox("please enter Good Name")
+    marks = InputBox("please enter marks")
+    
+    phone = InputBox("please enter contact number")
+    
+   'MsgBox ("roll number: " & roll & "Name: " & name & "Marks: " & marks & "phone: " & phone)'
+   
+   Cells(2, 1).Value = roll
+   Cells(2, 2).Value = name
+   Cells(2, 3).Value = marks
+   Cells(2, 4).Value = phone
+
+
+End Sub
+
+
+
+
+
+
+Sub displystudentdetails()
+
+Dim roll As Integer
+Dim name As String
+Dim marks As Integer
+Dim subject1 As Integer
+Dim subject2 As Integer
+Dim subject3 As Integer
+Dim subject4 As Integer
+Dim subject5 As Integer
+
+
+roll = InputBox("please enter roll number")
+name = InputBox("please enter name")
+marks = InputBox("please enter marks")
+subject1 = InputBox("please enter subject1")
+subject2 = InputBox("please enter subject2")
+subject3 = InputBox("please enter subject3")
+subject4 = InputBox("please enter subject4")
+subject5 = InputBox("please enter subject5")
+
+'MsgBox (roll & name & marks & subject1 & subject2 & subject3 & subject4 & subject5)'
+
+Cells(10, 1).Value = roll
+Cells(10, 2).Value = name
+Cells(10, 3).Value = marks
+Cells(10, 4).Value = subject1
+Cells(10, 5).Value = subject2
+Cells(10, 6).Value = subject3
+Cells(10, 7).Value = subject4
+Cells(10, 8).Value = subject5
+
+End Sub
+
+Sub findsquare()
+
+Dim a As Integer
+Dim c As Integer
+
+a = InputBox("please enter first number")
+
+c = a * a
+MsgBox (c)
+
+
+
+
+End Sub
+
+
+
+
+
+
+Sub findcube()
+
+Dim a As Integer
+Dim c As Integer
+
+a = InputBox("please enter first number")
+
+c = a * a * a
+MsgBox (c)
+
+End Sub
+
+
+
+Sub findareacircumference()
+
+Dim a As Integer
+Dim c As Integer
+Dim b As Integer
+Dim circum As Integer
+
+
+a = InputBox("please enter the radius")
+
+c = 3.14 * a * a
+circum = 3.14 * a
+
+
+MsgBox (c & circum)
+
+
+
+End Sub
