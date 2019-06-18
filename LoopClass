@@ -1,0 +1,82 @@
+Sub electricityprice()
+
+Dim unit As Integer
+Dim price As Integer
+
+unit = InputBox("please enter unit")
+
+If unit <= 100 Then
+    price = unit * 4
+  
+   MsgBox (price)
+  
+  Else
+ 
+        If unit > 100 And unit <= 200 Then
+         price = unit * 5
+         MsgBox (price)
+         Else
+            If unit >= 200 Then
+             price = unit * 6
+             MsgBox (price)
+             
+             End If
+             End If
+
+End If
+         
+         
+            
+Dim total As Integer
+
+total = price + 50
+
+MsgBox (total)
+
+
+ 
+End Sub
+
+Sub ForLoop()
+   
+Dim a As Integer
+a = 20
+Dim x As Integer
+x = 0
+For i = 1 To a
+    Cells(i, 1).Value = 100
+    x = x + i
+Next i
+
+MsgBox (x)
+   
+End Sub
+
+
+'find even number from 1 to 100
+Sub ForLoopOddEven()
+   
+Dim a As Integer
+a = 100
+Dim x As Variant
+
+For i = 1 To a
+ 
+ If i Mod 2 = 0 Then
+   ' MsgBox "evevn Numbe"
+   x = x & i & Chr(10)
+  End If
+  
+Next i
+
+MsgBox (x)
+
+
+   
+End Sub
+
+
+
+
+
+
