@@ -1,0 +1,100 @@
+Sub forloop()
+Dim a As Integer
+a = 10
+
+For i = i To a
+
+MsgBox (i)
+
+Next i
+
+End Sub
+
+
+Sub forloopcounting()
+
+Dim a As Integer
+a = 90
+
+For i = 51 To a
+
+MsgBox (i)
+
+Next i
+
+End Sub
+
+
+Sub forloopsumnadavrgofnaturalnum()
+
+Dim a As Integer
+Dim n As Integer
+Dim sum As Integer
+Dim avrg As Integer
+
+a = 1
+sum = 0
+n = InputBox("Please enter the first n number")
+
+For i = a To n
+sum = sum + i
+
+Next i
+avrg = sum / n
+MsgBox (sum & avrg)
+
+End Sub
+
+
+Sub WhileLoop()
+   Dim i As Integer
+   Dim x As Variant
+   
+   i = 0
+   
+   While i < 15
+   
+      ' MsgBox "The Current Value of the Counter is : " & i
+      i = i + 1
+           
+      x = x & i & Chr(10)
+      
+   Wend
+   
+   MsgBox (x)
+   
+End Sub
+
+Sub students()
+
+Dim a As Integer
+Dim b As Integer
+ a = 1
+  
+If a = 5 Then
+ i = a + 1
+Else
+  
+
+
+End If
+End Sub
+
+
+Function VegNonVeg(a As Integer)
+
+Dim x As String
+
+If a = 0 Then
+ 
+x = "Veg"
+
+Else
+x = "Chiken"
+
+End If
+
+VegNonVeg = x
+
+
+End Function
