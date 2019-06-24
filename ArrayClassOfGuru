@@ -1,0 +1,80 @@
+Sub findnumber()
+
+Dim y() As Variant
+Dim num As Integer
+Dim count As Integer
+
+Dim x As Variant
+
+count = 0
+num = 10
+
+y = Array(10, 20, 10, 10, 30)
+
+For i = 0 To 4
+If num = y(i) Then
+  count = count + 1
+   
+ End If
+x = x & y(i) & Chr(10)
+  
+  Next
+  
+ MsgBox (count)
+MsgBox (x)
+  
+ 
+ End Sub
+
+
+Sub maxnumber()
+
+Dim y() As Variant
+Dim num As Integer
+Dim count As Integer
+
+
+y = Array(10, 40, 5, 10, 30)
+
+
+num = y(0)
+
+For i = 0 To 4
+If num < y(i) Then
+  num = y(i)
+   
+ End If
+  
+  Next
+
+MsgBox (num)
+
+End Sub
+
+
+
+Sub minNumber()
+
+Dim y() As Variant
+Dim num As Integer
+Dim count As Integer
+
+
+y = Array(10, 40, 5, 10, 30)
+
+
+num = y(0)
+
+For i = 0 To 4
+If num > y(i) Then
+  num = y(i)
+   
+ End If
+  
+  Next
+
+ MsgBox (num)
+
+
+End Sub
+
