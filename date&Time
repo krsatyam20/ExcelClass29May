@@ -1,0 +1,119 @@
+Date :A Function, which returns the current system date.
+	Ex: 
+	Private Sub Constant_demo_Click()
+      Dim a as Variant
+      a = date()
+      msgbox "The Value of a : " & a
+    End Sub
+
+CDate :A Function, which converts a given input to date.
+		Ex:
+		Private Sub Constant_demo_Click()
+		   Dim a as Variant
+		   Dim b as Variant
+		   
+		   a = cdate("Jan 01 2020")
+		   msgbox("The Value of a : " & a)
+		   
+		   b = cdate("31 Dec 2050")
+		   msgbox("The Value of b : " & b)
+		End Sub
+	
+DateAdd :A Function, which returns a date to which a specified time interval has been added.
+		DateAdd(interval,number,date)
+		Interval − A required parameter. It can take the following values.
+
+		d - day of the year
+
+		m - month of the year
+
+		y - year of the year
+
+		yyyy - year
+
+		w - weekday
+
+		ww - week
+
+		q - quarter
+
+		h - hour
+
+		m - minute
+
+		s - second
+
+		Number − A required parameter. It can take both positive and negative parameters.
+
+		Date − A required parameter. A variant or literal representing the date to which an interval is added.	
+		
+		Private Sub Constant_demo_Click()
+		   ' Positive Interal
+		   date1 = 27-Jun-1894
+		   msgbox("Line 1 : " &DateAdd("yyyy",1,date1))
+		   msgbox("Line 2 : " &DateAdd("q",1,date1))
+		   msgbox("Line 3 : " &DateAdd("m",1,date1))
+		   msgbox("Line 4 : " &DateAdd("y",1,date1))
+		   msgbox("Line 5 : " &DateAdd("d",1,date1))
+		   msgbox("Line 6 : " &DateAdd("w",1,date1))
+		   msgbox("Line 7 : " &DateAdd("ww",1,date1))
+		   msgbox("Line 8 : " &DateAdd("h",1,"01-Jan-2013 12:00:00"))
+		   msgbox("Line 9 : " &DateAdd("n",1,"01-Jan-2013 12:00:00"))
+		   msgbox("Line 10 : "&DateAdd("s",1,"01-Jan-2013 12:00:00"))
+		  
+		   ' Negative Interval
+		   msgbox("Line 11 : " &DateAdd("yyyy",-1,date1))
+		   msgbox("Line 12 : " &DateAdd("q",-1,date1))
+		   msgbox("Line 13 : " &DateAdd("m",-1,date1))
+		   msgbox("Line 14 : " &DateAdd("y",-1,date1))
+		   msgbox("Line 15 : " &DateAdd("d",-1,date1))
+		   msgbox("Line 16 : " &DateAdd("w",-1,date1))
+		   msgbox("Line 17 : " &DateAdd("ww",-1,date1))
+		   msgbox("Line 18 : " &DateAdd("h",-1,"01-Jan-2013 12:00:00"))
+		   msgbox("Line 19 : " &DateAdd("n",-1,"01-Jan-2013 12:00:00"))
+		   msgbox("Line 20 : " &DateAdd("s",-1,"01-Jan-2013 12:00:00")) 
+		End Sub	
+		
+		
+DateDiff :A Function, which returns the difference between two time period.
+	msgbox("Line 1 : " &DateDiff("yyyy",fromDate,toDate))
+	
+DatePart :A Function, which returns a specified part of the given input date value.
+
+DateSerial :A Function, which returns a valid date for the given year, month, and date.
+
+FormatDateTime :A Function, which formats the date based on the supplied parameters.
+
+IsDate :A Function, which returns a Boolean Value whether or not the supplied parameter is a date.
+
+Day :A Function, which returns an integer between 1 and 31 that represents the day of the specified date.
+
+Month :A Function, which returns an integer between 1 and 12 that represents the month of the specified date.
+
+Year :A Function, which returns an integer that represents the year of the specified date.
+
+MonthName :A Function, which returns the name of the particular month for the specified date.
+
+WeekDay :A Function, which returns an integer(1 to 7) that represents the day of the week for the specified day.
+
+WeekDayName :A Function, which returns the weekday name for the specified day.
+
+Time Functions
+
+Now  :A Function, which returns the current system date and time.
+
+Hour :A Function, which returns an integer between 0 and 23 that represents the hour part of the given time.
+
+Minute :A Function, which returns an integer between 0 and 59 that represents the minutes part of the given time.
+
+Second  :A Function, which returns an integer between 0 and 59 that represents the seconds part of the given time.
+
+Time :A Function, which returns the current system time.
+
+Timer  :A Function, which returns the number of seconds and milliseconds since 
+
+TimeSerial :A Function, which returns the time for the specific input of hour, minute and second.
+
+TimeValue  :A Function, which converts the input string to a time format.
+
+ 
